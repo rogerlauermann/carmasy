@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Critical CSS - Above the fold styles */
+@source '../views/layouts/*.blade.php';
+@source '../views/partials/header.blade.php';
+@source '../views/partials/navigation.blade.php';
+
+@theme {
+    --color-primary: #3b82f6;
+    --color-secondary: #64748b;
+    --font-family-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --breakpoint-tablet: 768px;
+}
