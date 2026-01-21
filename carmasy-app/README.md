@@ -1,59 +1,219 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Carmasy - Modern Laravel Dashboard
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-12.47.0-red.svg)](https://laravel.com)
+[![Livewire](https://img.shields.io/badge/Livewire-4.0.1-orange.svg)](https://livewire.laravel.com)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4.1-blue.svg)](https://tailwindcss.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## About Laravel
+A modern, high-performance dashboard built with the latest versions of Laravel 12, Livewire v4, and Tailwind CSS v4. Features blazing-fast performance with the new Livewire Blaze compiler and CSS-first Tailwind configuration.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🚀 Performance Optimized
+- **Laravel 12.47.0** - Latest framework with modern architecture
+- **Livewire v4.0.1** - 20x performance boost with Blaze compiler
+- **Tailwind CSS v4.1** - 5x faster builds with CSS-first configuration
+- **Production-ready optimization** - Asset chunking, critical CSS splitting
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🎨 Modern UI/UX
+- **Dark/Light Mode** - Automatic theme switching
+- **Responsive Design** - Mobile-first approach
+- **Interactive Components** - Real-time counter, forms, notifications
+- **Smooth Animations** - CSS transitions and effects
 
-## Learning Laravel
+### 🛠️ Developer Experience
+- **Hot Reload** - Instant development feedback
+- **Type Safety** - PHP 8.3+ with proper type hints
+- **Modern Testing** - Pest framework integration
+- **Production Deployment** - Complete deployment script
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🏗️ Tech Stack
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Laravel** | 12.47.0 | PHP Framework |
+| **Livewire** | 4.0.1 | Reactive Components |
+| **Tailwind CSS** | 4.1 | Utility-first CSS |
+| **Vite** | 7.3.1 | Asset Bundling |
+| **PHP** | 8.3+ | Server-side Language |
+| **Pest** | 4.3.1 | Testing Framework |
 
-## Laravel Sponsors
+## 📦 Installation
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Prerequisites
+- PHP 8.3 or higher
+- Composer
+- Node.js 18+ & npm
+- Git
 
-### Premium Partners
+### Quick Start
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/rogerlauermann/carmasy.git
+   cd carmasy
+   ```
 
-## Contributing
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3. **Install Node dependencies**
+   ```bash
+   npm install
+   ```
 
-## Code of Conduct
+4. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5. **Build assets**
+   ```bash
+   npm run build
+   ```
 
-## Security Vulnerabilities
+6. **Start development servers**
+   ```bash
+   # Terminal 1: Laravel server
+   php artisan serve
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   # Terminal 2: Vite dev server
+   npm run dev
+   ```
 
-## License
+7. **Visit the application**
+   Open [http://localhost:8000](http://localhost:8000) in your browser
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🚀 Production Deployment
+
+### Automated Deployment
+
+Use the included deployment script for production:
+
+```bash
+chmod +x deploy-production.sh
+./deploy-production.sh
+```
+
+### Manual Deployment
+
+1. **Configure production environment**
+   ```bash
+   cp .env.production .env
+   php artisan key:generate --force
+   ```
+
+2. **Optimize for production**
+   ```bash
+   php artisan config:cache
+   php artisan route:cache
+   php artisan view:cache
+   composer install --no-dev --optimize-autoloader
+   ```
+
+3. **Build optimized assets**
+   ```bash
+   npm run build
+   ```
+
+## 🎯 Key Components
+
+### Dashboard Features
+- **Interactive Counter** - Livewire reactive counter with increment/decrement
+- **User Registration Form** - Validation with real-time feedback
+- **Notification System** - Dismissible alerts with different types
+- **Dark Mode Toggle** - Seamless theme switching
+- **Technology Showcase** - Display of current tech stack versions
+
+### Performance Features
+- **Critical CSS** - Above-the-fold styles loaded first
+- **Asset Chunking** - Optimized bundle splitting
+- **Lazy Loading** - Efficient resource loading
+- **Caching Strategy** - Redis-based caching configuration
+
+## 🧪 Testing
+
+Run the test suite:
+
+```bash
+# Run all tests
+php artisan test
+
+# Run with coverage
+php artisan test --coverage
+```
+
+## 📁 Project Structure
+
+```
+carmasy/
+├── app/                    # Laravel application code
+├── resources/              # Views, assets, and language files
+│   ├── css/               # Stylesheets (app.css, critical.css)
+│   ├── js/                # JavaScript files
+│   └── views/             # Blade templates
+│       ├── layouts/       # Layout files
+│       └── components/    # Livewire components
+├── routes/                 # Route definitions
+├── database/               # Migrations, seeders, factories
+├── public/                 # Public assets and entry point
+├── tests/                  # Test files
+├── config/                 # Configuration files
+├── storage/                # File storage
+├── bootstrap/              # Application bootstrap
+├── vendor/                 # Composer dependencies
+├── node_modules/           # NPM dependencies
+├── .env.example           # Environment template
+├── .env.production        # Production environment
+├── deploy-production.sh   # Deployment script
+├── vite.config.js         # Vite configuration
+├── composer.json          # PHP dependencies
+├── package.json           # Node dependencies
+└── README.md             # This file
+```
+
+## 🎨 Customization
+
+### Styling
+- Modify `resources/css/app.css` for global styles
+- Update `resources/css/critical.css` for critical path styles
+- Customize Tailwind configuration in `vite.config.js`
+
+### Components
+- Edit `resources/views/components/⚡welcome-dashboard.blade.php`
+- Add new Livewire components with `php artisan make:livewire`
+
+### Configuration
+- Laravel config: `config/` directory
+- Environment variables: `.env` file
+- Vite config: `vite.config.js`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Laravel](https://laravel.com) - The PHP framework for web artisans
+- [Livewire](https://livewire.laravel.com) - A full-stack framework for Laravel
+- [Tailwind CSS](https://tailwindcss.com) - A utility-first CSS framework
+- [Flux UI](https://fluxui.dev) - Official Livewire component library
+
+## 📞 Support
+
+If you have any questions or need help, please open an issue on GitHub.
+
+---
+
+**Built with ❤️ using the latest Laravel stack (January 2026)**
